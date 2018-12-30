@@ -1,0 +1,44 @@
+{
+  "src_folders" : ["src"],
+  "output_folder" : "reports",
+  "custom_commands_path" : "",
+  "page_objects_path" : "",
+  "custom_assertions_path" : "",
+  "globals_path" : "",
+  "live_output" : false,
+  "parallel_process_delay" : 10,
+  "disable_colors": false,
+  "test_workers" : false,
+
+  "selenium" : {
+    "start_process" : false,
+    "server_path" : "./selenium/selenium-server-standalone-3.14.0.jar",
+    "log_path" : "C:/Projects/reports",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "./selenium/chromedriver.exe",
+      "webdriver.gecko.driver" : "./selenium/geckodriver.exe",
+      "webdriver.firefox.profile" : "./selenium/geckodriver.exe"
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_host" : "127.0.0.1",
+      "selenium_port" : 4444,
+      "silent" : true,
+      "disable_colors": false,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities" : {
+        "browserName" : "firefox",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true
+      }
+    }
+	}
+}
